@@ -10,24 +10,24 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "IK~4e0yzDrL#6VH8BTMblV4ZKHUvwQDgIDRAixGZfLkaVGk4jCNXK1o",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "IK~YHsz2ZCS#gjsnLBxGs-Lqaaw36BfVhSaYgtkXiuwT7DXPuJzrEoc",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     CHATBOT: getConfig("CHATBOT") || "on", // on/off chat bot 
-    BOT_NAME: process.env.BOT_NAME || getConfig("NAWAB-XD") || "NAWAB-MD",  // Bot's display name
+    BOT_NAME: process.env.BOT_NAME || getConfig("NAWAB-RDX") || "NAWAB-RDX",  // Bot's display name
     MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
     REPO: process.env.REPO || "https://github.com/JawadTechXD/KHAN-MD",  // Bot's GitHub repo
     BAILEYS: process.env.BAILEYS || "@whiskeysockets/baileys",  // Bot's BAILEYS
 
     // ===== OWNER & DEVELOPER SETTINGS =====
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "923427582273",  // Owner's WhatsApp number
-    OWNER_NAME: process.env.OWNER_NAME || getConfig("NAWAB-XD") || "NAWAB=XD",           // Owner's name
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "923119244424",  // Owner's WhatsApp number
+    OWNER_NAME: process.env.OWNER_NAME || getConfig("NAWAB-RDX") || "NAWAB=RDX",           // Owner's name
     DEV: process.env.DEV || "923427582273",                     // Developer's contact number
     DEVELOPER_NUMBER: '923427582273@s.whatsapp.net',            // Developer's WhatsApp ID
 
     // ===== AUTO-RESPONSE SETTINGS =====
     AUTO_REPLY: process.env.AUTO_REPLY || "false",              // Enable/disable auto-reply
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*NAWAB MD VIEWED YOUR STATUS 🤖*",  // Status reply message
+    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*NAWAB RDX VIEWED YOUR STATUS 🤖*",  // Status reply message
     READ_MESSAGE: process.env.READ_MESSAGE || "false",          // Mark messages as read automatically?
     ANTI_CALL_MSG: process.env.ANTI_CALL_MSG || "*Call Rejected Automatically 🤖*",  // Status reply message
     // ===== REACTION & STICKER SETTINGS =====
@@ -48,7 +48,7 @@ module.exports = {
     ANTI_CALL: process.env.ANTI_CALL || "true", // enble to reject calls automatically 
     ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "true",    // Block bad words?
     ANTI_LINK: process.env.ANTI_LINK || "true",    // Block links in groups?
-    ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "true",                 // Block links in groups?
+    ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",                 // Block links in groups?
     ANTI_VV: process.env.ANTI_VV || "true",   // Block view-once messages?
     DELETE_LINKS: process.env.DELETE_LINKS || "true",          // Auto-delete links?
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "Inbox", // inbox deleted messages (or 'same' to resend)
@@ -56,13 +56,13 @@ module.exports = {
     PM_BLOCKER: process.env.PM_BLOCKER || "true",
 
     // ===== BOT BEHAVIOR & APPEARANCE =====
-    DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ NAWAB-XD*",  // Bot description
+    DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ NAWAB-RDX*",  // Bot description
     PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",        // Show bot as always online?
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
-    AUTO_BIO: process.env.AUTO_BIO || "false", // ture to get auto bio 
-    WELCOME: process.env.WELCOME || "false", // true to get welcome in groups 
-    GOODBYE: process.env.GOODBYE || "false", // true to get goodbye in groups 
-    ADMIN_ACTION: process.env.ADMIN_ACTION || "false", // true if want see admin activity 
+    AUTO_BIO: process.env.AUTO_BIO || "true", // ture to get auto bio 
+    WELCOME: process.env.WELCOME || "true", // true to get welcome in groups 
+    GOODBYE: process.env.GOODBYE || "true", // true to get goodbye in groups 
+    ADMIN_ACTION: process.env.ADMIN_ACTION || "true", // true if want see admin activity 
 };
